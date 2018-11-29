@@ -45,7 +45,7 @@ body{
 
 /* ~~~~~~~~~~~~FIRST SECTION ~~~~~~~~~~~~~~~~~*/
 .first-section {
-    
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25) inset;
     background: linear-gradient(238deg, #D2B1DA -0.62%, rgba(196, 196, 196, 0) 35.38%), url("images/main-backgroud-img.jpg") ;
     /*background-image: url("images/main-backgroud-img.jpg"); */
     
@@ -79,6 +79,7 @@ nav {
     align-self: center;
     line-height:88px;
     color: #E5E5E5;
+    text-shadow : 2px 2px 50px white;
     vertical-align: center;
 }
 .nav-div {
@@ -105,8 +106,11 @@ nav {
 }
 
 .mcc-ms-sec1{
-    
-  align-self: end;  
+
+  box-shadow: 15px -15px 0px 0px rgba(255,255,255);
+  align-self: end; 
+  width:55px; 
+  height: 97px;
 }
 
 .mcc-ms-sec2{
@@ -114,7 +118,10 @@ nav {
     display: grid;
     grid-template-rows: 3fr 1fr;
     justify-items: center;
+    margin: auto;
+    
 }
+
 
 .mcc-ms-sec2 p {
     align-self: middle;
@@ -123,8 +130,14 @@ nav {
     font-size: 14px;
     font-family: lustria;
     font-style: normal;
+    margin-bottom: 10px;
+/*
+    margin: 15px;
+    margin-top: 30px;
+*/
     
 }
+
 .mcc-ms-sec3 {
     
     align-self: center;
@@ -150,23 +163,27 @@ nav {
     width: 25px;
     margin-left: 3px;
 }
+
+
 /* ~~~~~~~~~~~~ LAST SECTION ~~~~~~~~~~~~~~~~~*/
+
 
 /* ~~~~~~~~~~~~SUB-SLIDE ..starting with its container~~~~~~~~~~~~~~~~~*/
 
 .sub-slides-container {
     
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    
     background: linear-gradient(145.04deg, #E3C8EA 1.26%, rgba(196, 196, 196, 0) 49.12%);
 }
 
-.sub-slide {
+.sub-slide{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 600px;
+    height: 500px;
     grid-gap: 20px;
     
 }
+
 
 .sub-slide-1 {
     
@@ -174,10 +191,9 @@ nav {
     grid-template-rows: 1fr 0.5fr 3fr 0.5fr 1fr;
     grid-template-columns: 22.67% 63.829% auto;
     
-    
 }
 
-.sub-slide-bg-1 {
+    .sub-slide-bg-1 {
     
     grid-row: 2/5;
     grid-column: 1/3;
@@ -186,14 +202,26 @@ nav {
 }
 
 
-.sub-slide-card-1 {
+    .sub-slide-card-1{
     
     grid-row: 3/4;
     grid-column: 2/4;
     background-image: url(images/blog.png);
-    background-size: cover;
+    background-size: 100% 100%;
     
 }
+
+
+.sub-slide-card-1 a{
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 300px;
+/*    border: 1px solid black;*/
+}
+
+
 
 
 .sub-slide-2 {
@@ -298,8 +326,23 @@ nav {
     grid-row: 3/4;
     grid-column: 1/3;
     background-image: url(images/email.png);
-    background-size: contain;
+    background-size: 100% 100%;
     
+}
+
+.sub-slide-card-1-2 a{
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 300px;
+/*    border: 1px solid black;*/
+}
+
+.sub-slide-2-2 {
+    display: grid;
+   justify-content: middle;
+    grid-template-rows: 1fr auto 1fr;
 }
 
 /* ~~~~~~~~~~~~FOOTER ~~~~~~~~~~~~~~~~~*/
@@ -311,5 +354,201 @@ nav {
 }
 /* ~~~~~~~~~~~~RESPONSIVE ~~~~~~~~~~~~~~~~~*/
 
+@media only screen and (max-width: 991px) {
+    
+    .first-section {
+    
+    height: 550px;
+    
+    }
+    
+    .main-content-container{
+        grid-template-columns: 1fr;
 
+    } 
+    .mcc-main-space{
+        grid-template-rows: 0% 1fr 1fr;
+        height: 300px;
+        margin-top: -100px
+        
+    }
+    .mcc-ms-sec1 {
+        visibility: hidden;
+        height: 0;
+        
+    }
+    .mcc-ms-sec2 {
+        
+        margin: auto;
+        background-color: white;
+        opacity: 0.9;
+    }
+    .mcc-ms-sec2 p{
+        margin: 15px;
+        margin-top: 30px;
+    }
+    .mcc-ms-sec2 p{
+        font-size: 12px
+    }
+    .logos-line{
+        margin: auto;
+    }
+    .myName{
+        font-size: 50px;
+        color: #E5E5E5;
+    }
+    
+    /* SUBSLIDESSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+    
+    .sub-slide {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    height: auto;
+    
+}
+    /* sub-slide-section-1-upper*/
+  
+    .sub-slide-1 {
+    
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 3fr 0.5fr 1fr;
+    grid-template-columns: auto 77.7% auto;
+    
+    height: 630px;
+    grid-row: 2;
+    
+}
+    .sub-slide-bg-1 {
+    
+    grid-row: 2/5;
+    grid-column: 1/4;
+    background-image: url(images/sub-slide-bg.png);
+    background-size: cover;
+    
+}
+    .sub-slide-card-1 {
+    
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-image: url(images/blog.png);
+    background-size: 100% 100%;
+    
+}
+    .sub-slide-card-1 a {
+        height: 300px;
+    }
+    /* sub-slide-section-1-lower*/
+    
+    .text1{
+    
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    justify-content: center;
+    grid-gap: 1em;
 
+    margin: 10%;
+    margin-top: 100px;
+    
+    color: #4E4444;
+    text-align:center;
+    font-size: 14px;
+    font-family: lustria;
+    font-style: normal;
+}  
+ 
+.text1 p{
+    align-self: end;
+}
+
+.text1 div {
+    align-self: center;
+    margin: auto;
+}
+    
+  /* sub-slide-section-2-upper*/  
+    .sub-slide-1-2 {
+    
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 3fr 0.5fr 1fr;
+    grid-template-columns: auto 77.7% auto;
+    height: 630px;
+    
+    
+}
+    .sub-slide-bg-1-2 {
+    
+    grid-row: 2/5;
+    grid-column: 1/4;
+    background-image: url(images/sub-slide-bg.png);
+    background-size: cover;
+}
+    .sub-slide-card-1-2 {
+    
+     grid-row: 3/4;
+    grid-column: 2/3;
+    background-image: url(images/email.png);
+    background-size: 100% 100%;
+    
+}
+     .sub-slide-card-1-2 a {
+        height: 300px;
+    }
+    
+    /* sub-slide-section-2-lower*/  
+   .text2 {
+    
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    justify-content: center;
+    grid-gap: 1em;
+
+    margin:10%;
+    
+    color: #4E4444;
+    text-align:center;
+    font-size: 14px;
+    font-family: lustria;
+    font-style: normal;
+}  
+ 
+.text2 p{
+    align-self: end;
+}
+
+.text2 div {
+    align-self: center;
+    margin: auto;
+}
+    
+    
+}
+
+@media only screen and (max-width: 600px){
+    
+    .sub-slide-1{
+        height: 300px;
+    }
+    
+     .sub-slide-card-1 {
+        background-size: 100% 100%;
+    }
+     .sub-slide-card-1 a {
+        height: 145px;
+    }
+    .sub-slide-1-2{
+        height: 300px;
+    }
+    
+     .sub-slide-card-1-2 {
+        background-size: 100% 100%;
+    }
+     .sub-slide-card-1-2 a {
+        height: 145px;
+    }
+    .myName {
+        color: white;
+        text-shadow : 2px 2px 120px purple;
+        font-weight: 500;
+    }
+}
