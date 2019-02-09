@@ -107,9 +107,9 @@ nav {
 
 .mcc-ms-sec1{
 
-  box-shadow: 15px -15px 0px 0px rgba(255,255,255);
+  box-shadow: 10px -10px 0px 0px rgba(255,255,255, 0.7);
   align-self: end; 
-  width:55px; 
+  width:80px; 
   height: 97px;
 }
 
@@ -153,7 +153,7 @@ nav {
 
 .logos-line {
    
-    width: 187px;
+    width: 160px;
     height: 25px;
     
 }
@@ -162,8 +162,11 @@ nav {
     height: 25px;
     width: 25px;
     margin-left: 3px;
+    box-shadow: 0 4px 8px 0 #FFFFFF, 0 6px 20px 0 #FFFFFF;
 }
 
+.logo { transition: all .2s ease-in-out; }
+.logo:hover { transform: scale(1.1); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 /* ~~~~~~~~~~~~ LAST SECTION ~~~~~~~~~~~~~~~~~*/
 
@@ -208,8 +211,12 @@ nav {
     grid-column: 2/4;
     background-image: url(images/blog.png);
     background-size: 100% 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     
 }
+
+.sub-slide-card-1 { transition: all .2s ease-in-out; }
+.sub-slide-card-1:hover { transform: scale(1.1); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 
 .sub-slide-card-1 a{
@@ -319,7 +326,9 @@ nav {
     grid-column: 2/-1;
     background-image: url(images/sub-slide-bg.png);
     background-size: cover;
+    
 }
+
 
 .sub-slide-card-1-2 {
     
@@ -327,8 +336,12 @@ nav {
     grid-column: 1/3;
     background-image: url(images/email.png);
     background-size: 100% 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     
 }
+
+.sub-slide-card-1-2 { transition: all .2s ease-in-out; }
+.sub-slide-card-1-2:hover { transform: scale(1.1); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .sub-slide-card-1-2 a{
     display: block;
