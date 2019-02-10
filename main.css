@@ -111,7 +111,11 @@ nav {
   align-self: end; 
   width:80px; 
   height: 97px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
+
+.mcc-ms-sec1 { transition: all .2s ease-in-out; }
+.mcc-ms-sec1:hover { transform: scale(1.1); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .mcc-ms-sec2{
     align-self: top;
